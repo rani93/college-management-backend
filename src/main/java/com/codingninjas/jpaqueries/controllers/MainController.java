@@ -50,4 +50,9 @@ public class MainController {
 	 4. Call the appropriate service method in order to get all students by the given course name.
 
 	 */
+
+	@GetMapping("/students/{course}")
+	public List<Student> getAllStudentsByCourse(@PathVariable String course) {
+		return service.getAllStudentsByCourse(course);
+	}
 }

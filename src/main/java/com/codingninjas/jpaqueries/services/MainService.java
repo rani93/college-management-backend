@@ -63,6 +63,10 @@ public class MainService {
 		return courseRepository.findByName(course);
 	}
 
+    public List<Student> getAllStudentsByCourse(String course) {
+        		return studentRepository.findAllByCoursesName(course);
+    }
+
 	/*
 
 	Task:
